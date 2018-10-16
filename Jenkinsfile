@@ -6,7 +6,7 @@ node {
         sh 'sbt compile'
       }
       stage('Test') {
-        sh 'sbt 'test'
+        sh 'sbt test'
       }
     }
     gerrit.review("Verified", 1, "It works !")
